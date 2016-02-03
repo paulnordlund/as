@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="en" ng-app="application">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow, noimageindex">
+    <title>Anna Shmagel</title>
+    <link rel='shortcut icon' href="assets/img/favicon.ico" type='image/x-icon'/ >
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png"/>
+    <link href="./assets/css/app.css" rel="stylesheet" type="text/css">
+    <script src="./assets/js/foundation.js"></script>
+    <script src="./assets/js/templates.js"></script>
+    <script src="./assets/js/routes.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-73284235-3', 'auto');
+    ga('send', 'pageview');
+
+    </script>
+  </head>
+  <body>
+
+  <div class="grid-frame vertical">
+    <div class="grid-block shrink wrap" style="padding: 0;">
+
+
+<!-- PROFILE AREA ---------------
+-------------------------------------------- -->    
+      <div class="grid-block small-12 hide-for-medium-only large-3 text-center profileArea">
+
+<!-- PROFILE AREA LARGE+ SCREEN ---------------
+-------------------------------------------- -->
+
+        <div class="grid-content show-for-large">
+          <img class="profilePhotoLarge" src="assets/img/ppp.jpg" alt="Anna Shmagel">
+          <p>
+          <h4 class="profileHeader"><strong><span>Anna Shmagel, MD</span></strong></h4><br>
+          <h5 class="profileText"><span>University of Minnesota Rheumatology</span></h4>
+          <br>
+          <img zf-iconic="" icon="person" size="small" class="iconic-color-secondary"><h5 class="profileText"><a href=""><span style="color: lightgrey">612-XXX-XXXX</span></a></h5><br>
+          <img zf-iconic="" icon="share-boxed" size="small" class="iconic-color-secondary"><h5 class="profileText"><a href=""><span style="color: lightgrey">email@gmail.com</span></a></h5><br>
+          <img zf-iconic="" icon="envelope" size="small" class="iconic-color-secondary"><h5 class="profileText"><a href="https://www.google.com/maps/place/420+Delaware+St+SE,+Minneapolis,+MN+55455/data=!4m2!3m1!1s0x52b32d3d98d6bf05:0x1e986a33d9d33e9e?sa=X&ved=0ahUKEwj18fqXrrTKAhUD6SYKHWzpDX0Q8gEIGzAA"><span style="color: lightgrey">420 Delaware Street SE<br>
+          Minneapolis, MN 55455</span></a></h5></p>
+        </div>
+
+<!-- PROFILE AREA SMALL SCREEN -----------------
+-------------------------------------------- -->
+
+        <div class="grid-content show-for-small-only">
+          <img class="profilePhotoSmall"src="assets/img/pp.jpg" alt="Anna Shmagel">
+          <h3 class="profileHeader"><strong><span>Anna Shmagel, MD</span></strong></h3>
+          <h4 class="profileText"><span>University of Minnesota Rheumatology</span></h4>
+          <br>
+          <br>
+          <br>
+
+          <div class="grid-content small-up-2">
+          <a zf-open="animatedModalExperience" class="button buttonSmall"><img zf-iconic="" icon="circle-check" size="small">Experience</a>
+          <a zf-open="animatedModalEducation" class="button buttonSmall"><img zf-iconic="" icon="flag" size="small">Education</a>
+          <a zf-open="animatedModalPublications" class="button buttonSmall"><img zf-iconic="" icon="document" size="small">Publications</a>
+          <a zf-open="animatedModalPresentations" class="button buttonSmall"><img zf-iconic="" icon="comment-square" size="small">Presentations</a>
+          <a zf-open="animatedModalResearch" class="button buttonSmall"><img zf-iconic="" icon="magnifying-glass" size="small">Research</a>
+          <a zf-open="animatedModalContact" class="button buttonSmall"><img zf-iconic="" icon="envelope" size="small">Contact</a>
+          <br>
+          </div>
+        </div>
+
+      </div>
+
+<!-- NAVIGATION MENU & UI VIEW MEDIUM+ SCREEN --
+-------------------------------------------- -->
+
+      <div class="vertical grid-block hide-for-small-only medium-12 large-9">
+        <div class="grid-content collapse">
+          <ul class="menu-bar navMenu">
+            <li ui-sref-active="is-active" class="navItem"><a ui-sref="home"><img zf-iconic="" icon="circle-check" size="small" class="float-left">Experience</a></li>
+            <li ui-sref-active="is-active" class="navItem"><a ui-sref="education"><img zf-iconic="" icon="flag" size="small" class="float-left">Education</a></li>
+            <li ui-sref-active="is-active" class="navItem"><a ui-sref="publications"><img zf-iconic="" icon="document" size="small" class="float-left">Publications</a></li>
+            <li ui-sref-active="is-active" class="navItem"><a ui-sref="presentations"><img zf-iconic="" icon="comment-square" size="small" class="float-left">Presentations</a></li>
+            <li ui-sref-active="is-active" class="navItem"><a ui-sref="research"><img zf-iconic="" icon="magnifying-glass" size="small" class="float-left">Research</a></li>
+            <li ui-sref-active="is-active" class="navItem show-for-medium-only"><a ui-sref="contact"><img zf-iconic="" icon="envelope" size="small" class="float-left">Contact</a></li>
+          </ul>
+        </div>
+
+        <div ui-view class="grid-content">
+        </div>
+
+      </div>
+
+    </div>
+
+<!-- EXPERIENCE MODAL - SMALL SCREEN -----------
+-------------------------------------------- -->
+
+      <div zf-modal="" class="animatedModals" id="animatedModalExperience" animation-in="slideInDown" animation-out="hingeOutFromMiddleY">
+        <a zf-close="" class="close-button">×</a>
+        <br>
+        <br>
+        <br>
+        <zf-accordion auto-open="true" collapsible="false" multi-open="false" class="charcoal">
+          <h3 class="animatedModalExperience text-center">Experience</h3>
+
+        <zf-accordion-item title="University of Minnesota">
+          <div class="grid-block small-12 align-center">
+            <div class="grid-content small-12 text-center">            
+              <p><a href="http://www.dom.umn.edu/rheumatic-and-autoimmune-diseases/"><img src="assets/img/mnlogo.gif" alt=""></a></p>
+            </div>
+          </div>
+          <div class="grid-block small-12">
+            <div class="grid-content small-12">
+              <p><strong>Rheumatology Fellow</strong><br>
+              Minneapolis, Minnesota<br>
+              July 2013-present<br><br>      
+              NIH T32 grant scholar<br>
+              (Division of Renal Diseases, PI: Dr. Hassan Ibrahim)</p>
+            </div>
+          </div>
+
+          <div class="grid-block small-12 align-center">
+              <div class="grid-content small-11 text-center">          
+                <p><img src="assets/img/mnpano.jpg" alt=""></p>
+            </div>
+          </div>
+        </zf-accordion-item>
+
+        <zf-accordion-item title="Northshore University HealthSystem">
+          <div class="grid-block small-12 align-center">
+            <div class="grid-content small-12 text-center">
+            <p><a href="http://www.northshore.org"><img src="assets/img/nsuhlogo.png" alt=""></a></p>
+            </div>
+          </div>
+          <div class="grid-block small-12">
+            <div class="grid-content small-12">
+              <p><strong>Clinician-Educator</strong><br>
+              Chicago, Illinois<br>
+              July 2012-June 2013<br><br>  
+              Instructed North Shore Internal Medicine residents, performed Hospitalist duties<br>
+              Clinician educator at Univesity of Chicago, Pritzker School of Medicine</p>
+            </div>
+          </div>
+          <div class="grid-block small-12 align-center">
+              <div class="grid-content small-11 text-center">
+                <p><img src="assets/img/nsuhevanston.jpg" alt=""></p>
+              </div>
+          </div>
+        </zf-accordion-item>
+
+        <zf-accordion-item title="Mercy Hospital & Medical Center">
+          <div class="grid-block small-12 align-center">
+              <div class="grid-content small-10 text-center">  
+                <p><a href="http://www.mercy-chicago.org"><img src="assets/img/mercylogo.png" alt=""></a></p>
+              </div>
+          </div>
+          <div class="grid-block small-12">
+            <div class="grid-content small-12">
+              <p><strong>Internal Medicine Resident</strong><br>
+              Chicago, Illinois<br>
+              July 2009-June 2012<br><br>
+              Internal Medicine Program Representative, Institutional G.M.E. Committee<br>
+              Member, Committee for Patient Handoffs</p>            
+            </div>
+          </div>
+          <div class="grid-block small-12 align-center">
+              <div class="grid-content small-11 text-center">         
+                <p><img src="assets/img/mhmcchicago.jpg" alt=""></p>
+              </div>
+          </div>
+        </zf-accordion-item>
+
+        <zf-accordion-item title="Feinstein Institute for Medical Research">
+          <div class="grid-block small-12 align-center">
+            <div class="grid-content small-10 text-center">    
+            <p><a href="http://www.feinsteininstitute.org/"><img src="assets/img/feinsteinlong.jpg" alt=""></a></p>
+            </div>
+          </div>
+          <div class="grid-block small-12">
+            <div class="grid-content small-12">
+              <p><strong>Research Assistant</strong><br>
+              Manhasset, New York<br>
+              March 2009-May 2009<br><br>
+              Research assistant for the Study of Cognitive Function in SLE (Autoimmune and Musculoskeletal Disease Group, PI: Dr. Betty Diamond)</p>
+            </div>
+          </div>
+          <div class="grid-block small-12 align-center">
+              <div class="grid-content small-11 text-center">    
+                <p><img src="assets/img/feinstein.jpg" alt=""></p>
+            </div>
+          </div>
+        </zf-accordion-item>
+        </zf-accordion>
+      </div>
+
+
+<!-- EDUCATION MODALS SMALL SCREEN -------------
+-------------------------------------------- -->
+
+      <div zf-modal="" class="animatedModals" id="animatedModalEducation" animation-in="slideInDown" animation-out="hingeOutFromMiddleY">
+        <a zf-close="" class="close-button">×</a>
+        <br>
+        <br>
+        <br>
+        <zf-accordion auto-open="true" collapsible="false" multi-open="false" class="charcoal">
+          <h3 class="animatedModalEducation text-center">Education</h3>
+
+        <zf-accordion-item title="University of Minnesota School of Public Health">
+          <div class="grid-block small-12 align-center">
+            <div class="grid-content small-12 text-center">            
+              <p><a href="http://www.sph.umn.edu/"><img src="assets/img/umnsphlogo.jpg" alt=""></a></p>
+            </div>
+          </div>
+          <div class="grid-block small-12">
+            <div class="grid-content">
+              <p>Minneapolis, Minnesota<br>
+              September 2014-present<br>
+              Expected graduation: June 2016<br><br>
+              Master's of Science in Clinical Research candidate</p>
+            </div>
+          </div>
+          <div class="grid-block small-12 align-center">
+            <div class="grid-content small-11 text-center">          
+              <p><img src="assets/img/umnmed.jpg" alt=""></p>
+            </div>
+          </div>
+        </zf-accordion-item>
+
+        <zf-accordion-item title="I.M. Sechenov Moscow Medical Academy">
+          <div class="grid-block small-12 align-center">
+            <div class="grid-content small-12 text-center">
+            <p><a href="http://www.mma.ru/en"><img src="assets/img/sech3.jpg" alt=""></a></p>
+            </div>
+          </div>
+          <div class="grid-block small-12">
+            <div class="grid-content small-12">
+              <p>Moscow, Russia<br>
+              September 2006-June 2008<br><br>
+              Doctor of Medicine degree awarded<br>
+              Graduated with honors</p>
+            </div>
+          </div>
+          <div class="grid-block small-12 align-center">
+            <div class="grid-content small-11 text-center">
+              <p><img src="assets/img/mma.jpg" alt=""></p>
+            </div>
+          </div>
+        </zf-accordion-item>
+
+        <zf-accordion-item title="Perm State Medical Academy">
+          <div class="grid-block small-12 align-center">
+            <div class="grid-content small-12 text-center">  
+              <p><a href="http://www.psma.ru/"><img src="assets/img/psmulogo.png" alt=""></a></p>
+            </div>
+          </div>
+          <div class="grid-block small-12">
+            <div class="grid-content small-12">
+              <p>Perm, Russia<br>
+              July 2009-June 2012<br><br>
+              Completed years three and four of the six-year Doctor of Medicine degree program<br>
+              Transferred to I.M. Sechenov Moscow Medical Academy</p>   
+            </div>
+          </div>
+          <div class="grid-block small-12 align-center">
+            <div class="grid-content small-11 text-center">         
+              <p><img src="assets/img/okb.jpg" alt=""></p>
+            </div>
+          </div>
+        </zf-accordion-item>
+
+        <zf-accordion-item title="Grinnell College">
+          <div class="grid-block small-12 align-center">
+            <div class="grid-content small-12 text-center">
+            <p><a href="http://www.grinnell.edu/"><img src="assets/img/gclong.png" alt=""></a></p>
+            </div>
+          </div>
+          <div class="grid-block small-12">
+            <div class="grid-content small-12">
+              <p>Grinnell, Iowa<br>
+              August 2003-May 2004<br><br>
+              Completed 2 semesters of undergraduate coursework in sociology and neuropsychology on a competitive US government-sponsored academic exchange scholarship (UGRAD)</p>
+            </div>
+          </div>
+          <div class="grid-block small-12 align-center">
+            <div class="grid-content small-11 text-center">    
+              <p><img src="assets/img/gchero.jpg" alt=""></p>
+            </div>
+          </div>
+        </zf-accordion-item>
+        </zf-accordion>
+      </div>
+
+   
+<!-- PUBLICATIONS MODAL SMALL SCREEN -----------
+-------------------------------------------- -->
+
+      <div zf-modal="" class="animatedModals" id="animatedModalPublications" animation-in="slideInDown" animation-out="hingeOutFromMiddleY">
+      <a zf-close="" class="close-button">×</a>
+      <br>
+      <br>
+      <br>
+        <zf-accordion auto-open="true" collapsible="false" multi-open="false">
+          <h3 class="animatedModalPublicatons text-center">Publications</h3>
+        
+        <zf-accordion-item title="Arthritis Care & Research">
+          <div class="grid-content">
+              <div class="secondary card">
+              <img src="assets/img/acr2.gif">
+              <div class="card-divider">
+              Under Review
+              </div>
+              <div class="card-section">
+              <p><strong>Epidemiology of Chronic Low Back Pain in US Adults: National Health and Nutrition Examination Survey 2009-2010.</strong>
+              <br><br>
+              Anna Shmagel, Robert Foley, Hassan Ibrahim
+              </div>
+              </div>
+          </div>
+        </zf-accordion-item> 
+
+
+        <zf-accordion-item title="Journal of Clinical Rheumatology">            
+            <div class="grid-content">
+                <div class="secondary card">
+                <a href="http://journals.lww.com/jclinrheum/Citation/2011/12000/Granulomatosis_With_Polyangiitis__Wegener_s_.9.aspx">
+                <img src="assets/img/jcr.png"></a>
+                <div class="card-divider">
+                2011 Dec; 17(8):442-3
+                </div>
+                <div class="card-section">
+                <p>
+                <a href="http://journals.lww.com/jclinrheum/Citation/2011/12000/Granulomatosis_With_Polyangiitis__Wegener_s_.9.aspx"><strong>Granulomatosis With Polyangiitis (Wegener’s) Presenting as a Periaortic Mass</strong></a>
+                <br><br>
+                Anna Shmagel, Rediet Kokebie, Catherine Meyer
+                </p> 
+                </div>
+                </div>
+            </div>
+        </zf-accordion-item>
+
+        <zf-accordion-item title="Journal of Graduate Medical Education">
+            <div class="grid-content">
+                <div class="secondary card">
+                <a href="http://www.jgme.org/doi/pdf/10.4300/JGME-D-12-00175.1">
+                <img src="assets/img/jgme2.jpg"></a>
+                <div class="card-divider">
+                2013 Jun; 5(2): 303-8
+                </div>
+                <div class="card-section">
+                <p><a href="http://www.jgme.org/doi/pdf/10.4300/JGME-D-12-00175.1">
+                <strong>Sustainability and Effectiveness of a Quality Improvement Project to Improve Handoffs to Night Float Residents in an Internal Medicine Residency Program.</strong></a>
+                <br><br>
+                Cemal Yazici, Hany Abdelmalak, Shanu Gupta, Anna Shmagel, Eman Albaddawi, Vivian Tsang, Steven Potts, Vineet M. Arora
+                </p>
+                <a href="http://www.jgme.org/doi/pdf/10.4300/JGME-D-12-00175.1" class="hollow dark button">PDF</a>
+                </div>
+                </div>
+            </div>
+        </zf-accordion-item>
+        </zf-accordion>
+      </div>
+
+<!-- PRESENTATIONS MODAL SMALL SCREEN ----------
+-------------------------------------------- -->      
+
+      <div zf-modal="" class="animatedModals" id="animatedModalPresentations" animation-in="slideInDown" animation-out="hingeOutFromMiddleY">
+        <a zf-close="" class="close-button">×</a>
+        <br>
+        <br>
+        <br>
+          <div zf-modal="" id="basicModalVitDSmall" class="large">
+          <a zf-close="" class="close-button">×</a><br><br>
+            <div>
+            <iframe src="https://drive.google.com/file/d/0BwVrq5oykPN5UUJLWkF2M29qeXc/preview" width="100%" height="480"></iframe>
+<!--        <object data="assets/pdf/vitamindposter.pdf" type="application/pdf" width="100%" height="400px">
+            <embed src="assets/pdf/vitamindposter.pdf" width="100%" height="400px" type='application/pdf'></embed>
+            </object> -->
+            </div>
+          </div>
+
+        <zf-accordion auto-open="true" collapsible="false" multi-open="false" class="charcoal">
+          <h3 class="animatedModalPresentations text-center">Presentations</h3>
+
+        <zf-accordion-item title="National Conferences">
+          <div class="grid-block small-12">
+            <div class="grid-content">
+            <p><strong>Illicit Drug Use in US Adults with Chronic Low Back Pain: NHANES 2009-2010.</strong><br>
+            <i>Anna Shmagel, Robert Foley</i><br>
+            Presented at: ACR/ARHP Annual Meeting, San Francisco, CA, 2015</p><br>
+            <p><strong>Prescription Medication Use in Community-Based US Adults with Chronic Low Back Pain: NHANES 2009-2010.</strong><br>
+            <i>Anna Shmagel, Robert Foley</i><br>
+            Presented at: ACR/ARHP Annual Meeting, San Francisco, CA, 2015</p><br>
+            <p><strong>Single Cell RNA-Seq Analysis of Citrullinated Alpha-Enolase Peptide-Specific B Cells in RA.</strong><br>
+            <i>Yogita Ghodke-Puranik, Na Zhang, Jessica M. Dorschner, Anna Shmagel, Zhongbo Jin, Philip
+            Titcombe, Timothy B. Niewold, Daniel Mueller</i><br>
+            Poster presented at: ACR/ARHP Annual Meeting, San Francisco, CA, 2015</p>
+            </div>
+          </div>
+        </zf-accordion-item>
+
+        <zf-accordion-item title="Regional Conferences">
+          <div class="grid-block small-12">
+
+            <div class="grid-content small-12">
+            <p><strong>Spontaneous pneumothorax in early scleroderma.</strong><br>
+            <i>Anna Shmagel, Maja Delibasic</i><br>
+            Poster presented at: American College of Physicians Illinois Chapter Annual Meeting, Chicago, IL, 2011</p><br>
+            <p><strong>“A Nasty Rash”. Antiepileptic drug hypersensitivity syndrome.</strong><br>
+            <i>Maja Delibasic, Anna Shmagel, Naitik Sheth, Vidhya Vivek, Alfred Amin, Nataliya Kozodoy, Rahil Shaikh</i><br>
+            Poster presented at: American College of Physicians Illinois Chapter Annual Meeting, Chicago, IL, 2011</p><br>
+            <p><strong>Using quality improvement techniques to improve handoffs to night float residents: development of the 10D model.</strong><br>
+            <i>Cemal Yazici, Hany Abdelmalak, Anumeha Gupta, Anna Shmagel, Shanu Gupta, Bhanu Pisini, Maged Attia Saad, Zvezdana Bogojevic, Firas Zakaria, Shazia Shahzaad, Muralidhar Yerramadha, Eman Albaddawi, Steven Potts, Vineet Arora</i><br>
+            Presented at: Society of General Internal Medicine Meeting, Chicago, IL, 2009/10</p><br>
+            <p><strong>The role of body weight in response to vitamin D repletion therapy: a retrospective study.</strong><br>
+            <i>Anna Shmagel, Catherine Meyer</i><br>
+            Poster presented at: American College of Physicians Illinois Chapter Annual Meeting, Chicago, IL, 2009</p>
+            <a zf-open="basicModalVitDSmall" class="dark button">View Poster</a>
+            </div>
+          </div>
+        </zf-accordion-item>
+
+        <zf-accordion-item title="Local Conferences - MN">
+          <div class="grid-block small-12">
+            <div class="grid-content small-12">
+            <p><strong>Epidemiologic characteristics of US adults with chronic low back pain: NHANES 2009</strong><br>
+            <i>Anna Shmagel, Robert Foley</i><br>
+            Oral presentation at Citywide Research Conference, Minneapolis, MN 2015</p><br>
+            <p><strong>Effects of B-cell depleting therapy in rheumatoid arthritis: insights into mechanisms of disease.</strong><br>
+            <i>Anna Shmagel, Daniel Mueller</i><br>
+            Oral presentation at Citywide Journal Club, Minneapolis, MN, 2014</p><br>
+            <p><strong>Weak, weaker, why? A case of statin-induced HMG-CoA reductase Ab-positive myositis.</strong><br>
+            <i>Anna Shmagel, Hollis Krug</i><br>
+            Oral presentation at Citywide Case Conference, Minneapolis, MN, 2013</p><br>
+            <p><strong>Clinical outcomes of remission induction therapy for severe ANCA-associated vasculitis: who doesn’t respond?</strong><br>
+            <i>Anna Shmagel, Peter Schlesinger, Anne Minenko</i><br>
+            Oral presentation at Citywide Journal Club, Minneapolis, MN, 2013</p><br>
+            </div>
+          </div>
+        </zf-accordion-item>
+
+        <zf-accordion-item title="Local Conferences - IL">
+          <div class="grid-block small-12">
+            <div class="grid-content small-12">
+            <p><strong>Journal Club: Levothyroxine dose and risk of fractures in older adults: a nested case-control study.</strong><br>
+            <i>Irina Komarova, Anna Shmagel, Kambiz Zorriasateynzadeh, Steven Potts, Shanu Gupta, Jane Jih</i><br>
+            Presented at Medicine Journal Club, Mercy Hospital, Chicago, IL, 2011</p><br>
+
+            <p><strong>Lung Cancer.</strong><br>
+            <i>Anna Shmagel, Seshan Subramanian</i><br>
+            Presented at Multidisciplinary Tumor Board, Mercy Hospital, Chicago, IL, 2011</p><br>
+
+            <p><strong>Atrial septal defects in adults.</strong><br>
+            <i>Ahmad Alsibai, Deepa Dharanipragada, Maged Saad, Anna Shmagel, Ming Hwang</i><br>
+            Presented at Cardiology Team Conference, Mercy Hospital, Chicago, IL, 2010</p><br>
+
+            <p><strong>Pseudotumor Cerebri.</strong><br>
+            <i>Vasin Jungtrakoolchai, Anna Shmagel, Eman Albadawi, Shanu Gupta, Michael McDonnell</i><br>
+            Presented at Medicine Case Conference, Mercy Hospital, Chicago, IL, 2009</p>
+            </div>
+          </div>
+        </zf-accordion-item>
+        </zf-accordion>
+      </div>
+
+<!-- RESEARCH MODAL SMALL SCREEN ---------------
+-------------------------------------------- -->
+
+      <div zf-modal="" class="animatedModals" id="animatedModalResearch" animation-in="slideInDown" animation-out="hingeOutFromMiddleY">
+        <a zf-close="" class="close-button">×</a>
+        <br>
+        <br>
+        <br>
+        <zf-accordion auto-open="true" collapsible="false" multi-open="false" class="charcoal">
+          <h3 class="animatedModalResearch text-center">Research</h3>
+
+        <zf-accordion-item title="Clinical Research Trainee">
+          <div class="grid-block small-12">
+            <div class="grid-content">
+              <p>July 2014-Present<br>
+              University of Minnesota Division of Renal Diseases, Minneapolis, Minnesota<br>
+              Funded by NIH T32 Grant, PI: Dr. Hassan Ibrahim, Key Mentor: Dr. Robert Foley</p><br>
+              <h6><strong>Current Projects</strong></h6><br>
+              <p><strong><i>Medication use patterns in US adults with chronic low back pain (NHANES database).</i></strong><br>
+              While multiple analgesics are marketed and routinely used in patients with chronic low back pain, little is known about comparative effectiveness and long-term safety of different classes of analgesics. We are using multivariate models to estimate the current analgesic use and prescription patterns in the US, starting with NHANES data.</p><br>
+              <p><i><strong>Spinal bone mineral density (BMD) in subjects with chronic low back pain (NHANES database).</i></strong><br>
+              Chronic low back pain is multifactorial, with a number of behavioral risk factors that may also be associated with low BMD. We are exploring the relationship between spinal BMD and chronic low back pain using the comprehensive data on BMD in the US population available through NHANES.</p>
+              <p><i><strong>The role of uric acid and urate-lowering medications in renal transplant survival.</i></strong><br>
+              Hyperuricemia has been associated with shorter renal transplant survival. It remains unclear whether urate-lowering therapy improves transplant survival. We are designing a cohort study to evaluate renal transplant survival in hyperuricemic patients treated with urate-lowering therapy, using over twenty years of prospective data from the University of Minnesota kidney transplant registry.</p>
+            </div>
+          </div>
+        </zf-accordion-item>
+
+        <zf-accordion-item title="Research Trainee">
+          <div class="grid-block small-12">
+            <div class="grid-content small-12">
+              <p>January 2014-Present<br>
+              University of Minnesota Division of Rheumatic and Autoimmune Diseases, Minneapolis, Minnesota<br>
+              Trained in laboratory research methods, including tetramer enrichment technique and flow cytometry</p><br>
+              <h6><strong>Current Projects</strong></h6><br>
+              <p><strong><i>Utility of citrullinated-peptide antigen tetramers as biomarkers of clinical response to RA therapy.</i></strong><br>
+              Expansion of autoreactive, citrullinated peptide-specific B lymphocytes has been described in RA, however the role of these cells in progression of disease remains unclear. This is a prospective study that will evaluate citrullinated peptide-specific switched memory B cell counts in RA patients overtime. The study aims to establish the predictive value of these cells in response to RA therapy.</p><br>
+            </div>
+          </div>
+        </zf-accordion-item>
+
+        <zf-accordion-item title="Research Assistant">
+          <div class="grid-block small-12">
+            <div class="grid-content small-12">
+              <p>March 2009-May 2009<br>
+              Feinstein Institute for Medical Research, Manhasset, New York<br>
+              Recruited and supervised patients for the Study of Cognitive Function in SLE<br>
+              Entered and analyzed data for the Study of Cognitive Function in SLE and the SLICC cohort</p><br>
+            </div>
+          </div>
+        </zf-accordion-item>
+
+        <zf-accordion-item title="Administrative Assistant">
+          <div class="grid-block small-12">
+            <div class="grid-content small-12">
+              <p>March 2002-August 2003<br>
+              Perm Regional AIDS Center, Perm, Russia<br>
+              Assisted with regional coordination of HIV control and prevention efforts<br>
+              Assisted with data collection and analysis for HIV epidemiologic research studies</p><br>
+            </div>
+          </div>
+        </zf-accordion-item>
+        </zf-accordion>
+      </div>
+
+<!-- CONTACT MODAL SMALL SCREEN ---------------
+-------------------------------------------- -->
+
+      <div zf-modal="" class="animatedModals" id="animatedModalContact" animation-in="slideInDown" animation-out="hingeOutFromMiddleY">
+        <a zf-close="" class="close-button">×</a>
+        <br><br>
+        <div class="animatedModalContact grid-block small-12">
+          <div class="grid-content text-center">
+            
+            <h3><strong><span style="color: #404040">Anna Shmagel, MD</span></strong></h3>
+            <h4><span style="color: #404040">University of Minnesota Rheumatology</span></h4>
+            <br>
+            <img zf-iconic="" icon="person" size="small"><h5><a href=""><span style="color: #404040">612-XXX-XXXX</span></a></h5><br>
+
+            <img zf-iconic="" icon="share-boxed" size="small"><h5><a href=""><span style="color: #404040">email@gmail.com</span></a></h5><br>
+            
+            <img zf-iconic="" icon="envelope" size="small"><h5><a href="https://www.google.com/maps/place/420+Delaware+St+SE,+Minneapolis,+MN+55455/data=!4m2!3m1!1s0x52b32d3d98d6bf05:0x1e986a33d9d33e9e?sa=X&ved=0ahUKEwj18fqXrrTKAhUD6SYKHWzpDX0Q8gEIGzAA"><span style="color: #404040">420 Delaware Street SE<br>
+            Minneapolis, MN 55455</span></a></h5>
+            <br>
+            <br>            
+            <img class="profilePhotoContactModal"src="assets/img/ppp.jpg" alt="Anna Shmagel">
+            <br>
+          </div>
+        </div>
+
+<!-- END -------------------------------------
+-------------------------------------------- -->
+
+    </div>
+  </div>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+  </body>
+</html>
